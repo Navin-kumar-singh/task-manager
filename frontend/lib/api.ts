@@ -1,6 +1,6 @@
-import { Task, TaskDraft } from "./types";
+mport { Task, TaskDraft } from "./types";
 
-const API_URL = process.env.NEXT_PUBLIC_API_URL || "http://localhost:5000";
+const API_URL = process.env.NEXT_PUBLIC_API_URL || "";
 
 async function handle<T>(res: Response): Promise<T> {
   if (!res.ok) {
